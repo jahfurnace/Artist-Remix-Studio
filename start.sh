@@ -23,3 +23,4 @@ echo "Frontend PID: $FRONTEND_PID (port $APP_PORT)"
 
 # Wait for either process to exit
 wait $BACKEND_PID $FRONTEND_PID
+
