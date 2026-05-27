@@ -7,7 +7,7 @@ BACKEND_PORT=8000
 # Start backend
 echo "Starting backend on port $BACKEND_PORT..."
 cd "$(dirname "$0")/backend"
-UV_BIN=$(which uv 2>/dev/null || echo "$HOME/.cargo/bin/uv")
+UV_BIN=$(which uv 2>/dev/null || echo "$HOME/.local/bin/uv")
 "$UV_BIN" run uvicorn app.main:app --host 0.0.0.0 --port $BACKEND_PORT --reload &
 BACKEND_PID=$!
 cd - > /dev/null
