@@ -5,7 +5,7 @@ APP_PORT=${APP_PORT:-3040}
 BACKEND_PORT=$((${APP_PORT:-3040} + 100))
 
 if [ -f /usr/local/lib/workshop-devguard.sh ]; then
-    source /usr/local/lib/workshop-devguard.sh
+    source /usrj/local/lib/workshop-devguard.sh
     devguard_acquire "$APP_PORT" "$BACKEND_PORT"
 fi
 
